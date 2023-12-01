@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>AssgPortfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <link rel ="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f6d104cb95.js"
+        crossorigin="anonymous"></script>
+
+    </head>
+    
+
+        <!-- header starts here -->
+
+        <header>
+            <div class="user">
+                <img src="jan.jpg" alt="">
+                <h3 class="name">nuraliah husna bt rusli</h3>
+                <p class="post">Content Creator</p>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#project">project</a></li>
+                    <li><a href="#contact">contact</a></li>
+
+                </ul>
+            </nav>        
+            
+            <div class="contact-icons"
+       
+    <a href="https://www.twitter.com/owohoooo" target="_blank">
+        <i class="fab fa-twitter" style="font-size:2.5rem;color:#bc8f8f"></i></a>
+    <a href="https://www.instagram.com/yaya.rusli/" target="_blank">
+        <i class="fab fa-instagram"style="font-size:2.5rem;color:#bc8f8f"></i></a>
+    <a href="https://www.facebook.com/yaya.rusli" target="_blank">
+        <i class="fab fa-facebook" style="font-size:2.5rem;color:#bc8f8f"></i></a>
+        </div>
+               
+
+        </header>
+
+        <!--header section ends here-->
+          
+        <div id="menu" class="fas fa-bars"></div>
+        
+        <!-- home section starts -->
+        
+<section class="home" id="home">
+      <h3>HI THERE !</h3>
+      <h1>I'M <span>nuraliah husna</span></h1>
+      <p>WELCOME TO MY WEBSITE! </p>
+      <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+<!-- home section ends -->
+
+<!---------about section stars here-------------->
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> me </h1>
+
+    <div class="row">
+        <div class="about-col-1">
+            <img src="yaya.jpg">
+        </div>
+        <div class="about-col-2">
+            
+            <p> I am Yaya, a 21-year-old resident of Selangor and the youngest among my six siblings.
+                As an ambivert with a laid-back personality, I find joy in photography and videography,
+                often compiling short edits to preserve moments as cherished memories online. 
+                Additionally, I have a keen interest in literature and self-help genres in my reading pursuits.   
+            </p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Content strategy</span><br>Developed and executed comprehensive content strategies</li> 
+                    <li><span>video grapher</span><br>Skilled in shooting visually stunning footage and understand basic graphic concept </li>
+                    <li><span>Web Developer</span><br>Design creative application and website</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2023</span><br>Bachelor of Internet Computing at UniSZA</li> 
+                    <li><span>2020</span><br>Matriculation at Gopeng,perak</li>
+                    <li><span>2018</span><br>SPM graduates from Sri Ayesha Islamic school</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2023</span><br>Designing a poster</li> 
+                    <li><span>2021</span><br>Edit video for an organization</li>
+                    <li><span>2016</span><br>In charge to produce school magazine under multimedia team</li>
+                </ul>
+            </div>
+        </div> 
+
+        <script>
+            
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");   
+                }
+                for (tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }  
+        </script>
+        
+</section>
+
+
+<!---------about section ends here-------------->
+
+
+<!-- project section starts here-->
+<section class="project" id="project">
+    <h1 class="heading"> my <span>project</span>  </h1>
+    
+    <div class="box-container">
+       
+        <div class="box">
+            <img src="ok.jpg" alt="">
+            <div class="ooo">
+                <h3>student enroll form</h3>
+            </div>
+        </div>
+        
+         <div class="box">
+            <img src="ok1.jpg" alt="">
+             <div class="ooo">
+                <h3>Montage Video</h3>
+             </div>
+        </div>
+        
+         <div class="box">
+             <img src="i.jpg" alt="">
+             <div class="ooo">
+                <h3>Web Portfolio Development</h3>
+             </div>
+        </div>
+        
+    </div>
+    
+    
+</section>
+
+<!-- project section ends here-->
+
+<!-- contact section starts here -->
+
+<section class="contact" id="contact">
+    <h1 class="heading"> <span>contact</span> me</h1>
+
+    <div class="row">
+        <div class="content">
+            <h3 class="title">Contact Info</h3>
+            
+            <div class="info">
+                <h3> <i class="fas fa-envelope"></i> nuraliahhusna.rusli@gmail.com </h3>
+                <h3> <i class="fas fa-phone"></i> 011-61260741</h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Kajang, Selangor </h3>
+            </div>
+        </div>
+
+        <form action="#">
+            <input type="text" placeholder="Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
+            <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- contact section end here -->
+        
+        
+        
+        
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js "></script>
+        <script src="script.js"></script>
